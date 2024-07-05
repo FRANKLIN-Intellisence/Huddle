@@ -1,0 +1,76 @@
+.Info{
+    padding: 6rem 3rem;
+    background: #fff;
+    color: #1a1919;
+}
+.Info>div{
+    padding: 2rem 4rem;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px #808080,
+                -1px -1px 5px #808080;
+}
+.Info p{
+    font-size: 1.05rem;
+}
+.Info img{
+    height: 20rem;
+}
+.Explanation{
+    width: 45%;
+}
+.Explanation h2{
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+    .Info{
+        padding: 6rem 2rem;
+        background: #fff;
+        color: #1a1919;
+    }
+    .Info>div{
+        padding: 1.5rem 2rem;
+        border-radius: 20px;
+        width: 70%;
+        margin: 0 auto 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 5px #808080,
+                    -1px -1px 5px #808080;
+    }
+    .Info p{
+        font-size: 1rem;
+    }
+    .Info img{
+        height: 12rem;
+    }
+    .Explanation{
+        text-align: center;
+        width: 80%;
+    }
+    .Explanation h2{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .Explanation{
+        width: 90%;
+    }
+    .Info div{
+        padding: 1rem;
+        width: 95%;
+        text-align: center;
+    }
+    .Info img{
+        height: 8rem;
+    }
+}

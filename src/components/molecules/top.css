@@ -1,0 +1,79 @@
+.Top{
+    background: #91dfdf;
+    background-image: url('../../assets/bg-hero-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 3rem 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.TopLeft{
+    width: 38%;
+    margin: auto;
+    color: #1a1919;
+}
+.TopLeft *{
+    margin-bottom: 1.5rem;
+}
+.TopLeft p{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.TopLeft a{
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    background: #ff33b4;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.TopLeft a:hover{
+    background: #fff;
+    color: #ff33b4;
+    box-shadow: 4px 4px 10px #ff33b4;
+}
+.TopRight{
+    width: 50%;
+    margin: auto;
+}
+.TopRight img{
+    width: 100%;
+}
+
+@media (max-width:800px) {
+    .Top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        padding: 7rem 3rem;
+    }
+    .TopLeft{
+        text-align: center;
+        width: 80%;
+    }
+    .TopRight{
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .Top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        padding: 6rem 1rem 4rem;
+    }
+    .TopLeft{
+        text-align: center;
+        width: 95%;
+    }
+    .TopRight{
+        width: 90%;
+    }
+}
